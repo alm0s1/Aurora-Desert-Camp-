@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Aurora Desert Camp | مخيم أورورا الصحراوي ببدية</title>
+  <meta name="description" content="Aurora Desert Camp in Bidiyah — تجربة تخييم صحراوية فاخرة مع غرف مرتفعة، جلسات خارجية، حمامات حديثة، وروابط مباشرة للإنستجرام والحجز عبر Booking." />
+  <meta name="theme-color" content="#c19a6b" />
+  <meta property="og:title" content="Aurora Desert Camp | مخيم أورورا الصحراوي ببدية" />
+  <meta property="og:description" content="اقضِ ليلة لا تُنسى بين كثبان بدية. تصفّح الصور على إنستجرام واحجز فوراً عبر Booking." />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="ar_AR" />
+  <style>
+    :root{
+      --bg:#0f1419;--text:#f3f4f6;--muted:#cbd5e1;--primary:#b47b37;--primary-700:#915f28;--card:#141a20;--line:#1f2a33
+    }
+    *{box-sizing:border-box}
+    body{margin:0;background:var(--bg);color:var(--text);font-family:"Noto Naskh Arabic","Noto Sans Arabic",system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif}
+    a{color:inherit;text-decoration:none}
+    img{max-width:100%;display:block}
+    header{position:sticky;top:0;z-index:20;background:rgba(15,20,25,.7);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+    .container{width:min(1200px,94vw);margin:0 auto}
+    .nav{display:flex;align-items:center;justify-content:space-between;padding:.8rem 0}
+    .brand{display:flex;align-items:center;gap:.6rem;font-weight:800}
+    .logo{width:36px;height:36px;border-radius:10px;background:radial-gradient(#e6c89d,#b47b37)}
+    .nav-actions{display:flex;gap:.5rem;align-items:center}
+    .btn{display:inline-flex;align-items:center;gap:.5rem;padding:.7rem 1rem;border-radius:12px;border:1px solid var(--line);transition:.25s;background:transparent}
+    .btn.primary{background:var(--primary);border-color:transparent;color:#1b1206}
+    .btn.primary:hover{background:var(--primary-700);color:#fff}
+    .btn.ghost:hover{background:#172029}
+    .lang{display:inline-flex;border-radius:10px;overflow:hidden;border:1px solid var(--line)}
+    .lang button{background:transparent;color:var(--text);border:0;padding:.6rem .8rem;cursor:pointer}
+    .lang button.active{background:#1b2330}
+    /* Hero */
+    .hero{position:relative}
+    .hero .media{position:relative;aspect-ratio:16/9;border-bottom:1px solid var(--line);background:#0b0f14}
+    .hero .media img{width:100%;height:100%;object-fit:cover;filter:brightness(.65)}
+    .hero .overlay{position:absolute;inset:0;display:grid;align-items:center}
+    .hero .box{width:min(560px,92%);margin-inline:auto;background:rgba(0,0,0,.25);backdrop-filter:blur(6px);border:1px solid var(--line);border-radius:16px;padding:1rem}
+    .title{font-size:clamp(1.6rem,3vw,2.2rem);margin:.2rem 0 .6rem}
+    .muted{color:var(--muted)}
+    .cta{display:flex;gap:.6rem;flex-wrap:wrap;margin-top:.8rem}
+    /* Sections */
+    section{padding:2.6rem 0}
+    h2{font-size:clamp(1.4rem,2.2vw,1.9rem);margin:0 0 1rem}
+    .grid-3{display:grid;gap:1rem}
+    @media(min-width:900px){.grid-3{grid-template-columns:repeat(3,1fr)}}
+    .card{background:var(--card);border:1px solid var(--line);border-radius:16px;overflow:hidden}
+    .card .body{padding:1rem}
+    .icon{font-size:1.4rem}
+    /* Gallery */
+    .gallery{display:grid;gap:1rem}
+    @media(min-width:900px){.gallery{grid-template-columns:2fr 1fr}}
+    .gallery .col{display:grid;gap:1rem}
+    .gallery img{aspect-ratio:4/3;object-fit:cover;border-radius:14px;border:1px solid var(--line)}
+    /* Map */
+    .map{border:1px solid var(--line);border-radius:16px;overflow:hidden}
+    /* Footer */
+    footer{border-top:1px solid var(--line);padding:1.4rem 0;color:#9aa6b2}
+    /* Bilingual */
+    [data-lang="en"]{display:none}
+    :root[lang="en"] [data-lang="ar"]{display:none}
+    :root[lang="en"] [data-lang="en"]{display:block}
+    :root[lang="en"] html{direction:ltr}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <div class="brand">
+        <div class="logo" aria-hidden="true"></div>
+        <span>Aurora Desert Camp | مخيم أورورا</span>
+      </div>
+      <div class="nav-actions">
+        <div class="lang" aria-label="language switcher">
+          <button id="btn-ar" class="active" aria-label="العربية">AR</button>
+          <button id="btn-en" aria-label="English">EN</button>
+        </div>
+        <a class="btn ghost" href="https://instagram.com/aurora.desert" target="_blank" rel="noopener">Instagram</a>
+        <a class="btn primary" href="https://www.booking.com/Share-jxq6ke" target="_blank" rel="noopener">احجز الآن | Book</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="media">
+      <img src="IMG_4143.jpg" alt="Bidiyah golden dunes at sunset" loading="eager" />
+    </div>
+    <div class="overlay">
+      <div class="box container">
+        <div data-lang="ar">
+          <div class="title">تجربة هادئة بين رمال بدية</div>
+          <p class="muted">استرخِ في وحدات مرتفعة بإطلالات على الكثبان، حمامات حديثة وجلسات خارجية على الشرفات.</p>
+          <div class="cta">
+            <a class="btn primary" href="https://www.booking.com/Share-jxq6ke" target="_blank">احجز عبر Booking</a>
+            <a class="btn ghost" href="https://instagram.com/aurora.desert" target="_blank">شاهد صورنا</a>
+          </div>
+        </div>
+        <div data-lang="en">
+          <div class="title">Slow, Serene Desert Stays in Bidiyah</div>
+          <p class="muted">Elevated cabins with sweeping dune views, modern bathrooms, and cozy terraces.</p>
+          <div class="cta">
+            <a class="btn primary" href="https://www.booking.com/Share-jxq6ke" target="_blank">Book on Booking</a>
+            <a class="btn ghost" href="https://instagram.com/aurora.desert" target="_blank">View on Instagram</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT / FEATURES -->
+  <section id="about">
+    <div class="container">
+      <h2 data-lang="ar">عن Aurora Desert Camp</h2>
+      <h2 data-lang="en">About Aurora Desert Camp</h2>
+      <div class="grid-3">
+        <div class="card">
+          <img src="jalsh.jpg" alt="Traditional majlis seating on sand" loading="lazy" />
+          <div class="body">
+            <b data-lang="ar">جلسات بدوية</b>
+            <b data-lang="en">Bedouin Majlis</b>
+            <p class="muted" data-lang="ar">جلسات عربية تقليدية بجوار الخيم لقهوة وتمر تحت النجوم.</p>
+            <p class="muted" data-lang="en">Traditional majlis seating for coffee and dates under the stars.</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="7b2863fc-63e3-4078-a476-b83800a5dce8 ٢.JPG" alt="Bedroom interior" loading="lazy" />
+          <div class="body">
+            <b data-lang="ar">أسِرّة مريحة</b>
+            <b data-lang="en">Comfortable Beds</b>
+            <p class="muted" data-lang="ar">مفارش نظيفة وأسرة واسعة لإقامة هادئة.</p>
+            <p class="muted" data-lang="en">Crisp linens and spacious beds for a peaceful sleep.</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="c04a306a-2d59-4896-bd4e-0d62e6051ec0.JPG" alt="Modern shower" loading="lazy" />
+          <div class="body">
+            <b data-lang="ar">حمامات حديثة</b>
+            <b data-lang="en">Modern Bathrooms</b>
+            <p class="muted" data-lang="ar">دش مطري وتجهيزات عملية لانتعاش بعد المغامرة.</p>
+            <p class="muted" data-lang="en">Rain showers and practical fittings after your adventures.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section id="gallery">
+    <div class="container">
+      <h2 data-lang="ar">صور من رمال بدية</h2>
+      <h2 data-lang="en">Bidiyah Dunes Gallery</h2>
+      <div class="gallery">
+        <div class="col">
+          <img src="88.jpg" alt="Golden dunes in Bidiyah at sunset" loading="lazy" />
+          <img src="IMG_4143.jpg" alt="Milky Way over desert camp" loading="lazy" />
+        </div>
+        <div class="col">
+          <img src="764886940.jpg" alt="Camel caravan footprints on sand" loading="lazy" />
+          <img src="765160100.jpg" alt="Tea setup on dunes" loading="lazy" />
+        </div>
+      </div>
+      <div class="cta" style="margin-top:1rem">
+        <a class="btn ghost" href="https://instagram.com/aurora.desert" target="_blank">Instagram</a>
+        <a class="btn primary" href="https://www.booking.com/Share-jxq6ke" target="_blank">احجز الآن | Book</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ACTIVITIES -->
+  <section id="activities">
+    <div class="container">
+      <h2 data-lang="ar">الفعاليات والتجارب</h2>
+      <h2 data-lang="en">Activities & Experiences</h2>
+      <div class="grid-3">
+        <div class="card">
+          <img src="ad631dbc45b3b4698c80ff3980d4564b13acf43b52577571c80bf6e42573bf9a.jpeg.avif" alt="Camel ride at dunes" loading="lazy" />
+          <div class="body">
+            <b data-lang="ar">ركوب الجمال</b>
+            <b data-lang="en">Camel Rides</b>
+            <p class="muted" data-lang="ar">جولات قصيرة مع مرشدين محليين فوق الكثبان.</p>
+            <p class="muted" data-lang="en">Guided short rides over the dunes.</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="DLImage.JPG" alt="4x4 dune bashing" loading="lazy" />
+          <div class="body">
+            <b data-lang="ar">تطعيس بسيارات 4x4</b>
+            <b data-lang="en">4x4 Dune Bashing</b>
+            <p class="muted" data-lang="ar">مغامرة مثيرة على الكثبان (بالحجز المسبق).</p>
+            <p class="muted" data-lang="en">Thrilling rides on the dunes (pre-booking).</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="quad-bike-adventures.jpg" alt="ATV quad biking in desert" loading="lazy" />
+          <div class="body">
+            <b data-lang="ar">دراجات رملية (ATV)</b>
+            <b data-lang="en">Quad Biking (ATV)</b>
+            <p class="muted" data-lang="ar">قيادة حرة وآمنة في مسارات محددة.</p>
+            <p class="muted" data-lang="en">Fun and safe tracks for riders.</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="caption.jpg" alt="Sandboarding on dune" loading="lazy" />
+          <div class="body">
+            <b data-lang="ar">التزلج على الرمال</b>
+            <b data-lang="en">Sandboarding</b>
+            <p class="muted" data-lang="ar">نشاط ممتع يناسب الكبار والصغار.</p>
+            <p class="muted" data-lang="en">A fun favorite for all ages.</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="444b4b79-f0a7-4676-9687-935cedaed6b2 ٢.JPG" alt="Stargazing over dunes" loading="lazy" />
+          <div class="body">
+            <b data-lang="ar">رصد النجوم</b>
+            <b data-lang="en">Stargazing</b>
+            <p class="muted" data-lang="ar">ليالٍ صافية لرؤية درب التبانة والتقاط الصور.</p>
+            <p class="muted" data-lang="en">Crystal-clear skies for Milky Way views.</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="80.jpg" alt="Bedouin dinner by campfire" loading="lazy" />
+          <div class="body">
+            <b data-lang="ar">عشاء بدوي</b>
+            <b data-lang="en">Bedouin Dinner</b>
+            <p class="muted" data-lang="ar">أطباق محلية حول النار مع قهوة عُمانية.</p>
+            <p class="muted" data-lang="en">Local dishes by the fire with Omani coffee.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LOCATION -->
+  <section id="location">
+    <div class="container">
+      <h2 data-lang="ar">الموقع</h2>
+      <h2 data-lang="en">Location</h2>
+      <div class="map">
+        <!-- استبدل الإحداثيات بالموقع الدقيق عند توفره -->
+        <iframe title="Aurora Desert Camp Location" src="https://www.google.com/maps?q=22.4578,58.7993&hl=ar&z=11&output=embed" width="100%" height="360" style="border:0" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+      <p class="muted" data-lang="ar">يبعد المخيم نحو ساعتين ونصف بالسيارة من مسقط. تتوفر مواقف بالقرب من الوحدات.</p>
+      <p class="muted" data-lang="en">Approximately 2.5 hours' drive from Muscat. Parking available near the units.</p>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container" style="display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap">
+      <div>© <span id="year"></span> Aurora Desert Camp</div>
+      <div data-lang="ar">روابط سريعة: <a href="https://instagram.com/aurora.desert" target="_blank">إنستجرام</a> • <a href="https://www.booking.com/Share-jxq6ke" target="_blank">الحجز</a></div>
+      <div data-lang="en">Quick links: <a href="https://instagram.com/aurora.desert" target="_blank">Instagram</a> • <a href="https://www.booking.com/Share-jxq6ke" target="_blank">Booking</a></div>
+    </div>
+  </footer>
+
+  <script>
+    // dynamic year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // language toggle
+    const root = document.documentElement;
+    const btnAr = document.getElementById('btn-ar');
+    const btnEn = document.getElementById('btn-en');
+    function setLang(lang){
+      root.setAttribute('lang', lang);
+      document.body.dir = (lang === 'ar') ? 'rtl' : 'ltr';
+      btnAr.classList.toggle('active', lang==='ar');
+      btnEn.classList.toggle('active', lang==='en');
+    }
+    btnAr.addEventListener('click', ()=> setLang('ar'));
+    btnEn.addEventListener('click', ()=> setLang('en'));
+  </script>
+</body>
+</html>
