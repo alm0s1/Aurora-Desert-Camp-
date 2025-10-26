@@ -1,21 +1,15 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="en" dir="ltr">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Aurora Desert Camp | مخيم أورورا الصحراوي ببدية</title>
-  <meta name="description" content="Aurora Desert Camp in Bidiyah — تجربة تخييم صحراوية فاخرة مع غرف مرتفعة، جلسات خارجية، حمامات حديثة، وروابط مباشرة للإنستجرام والحجز عبر Booking." />
+  <title>Aurora Desert Camp | Bidiyah, Oman</title>
+  <meta name="description" content="Aurora Desert Camp — Elevated desert cabins in Bidiyah with Bedouin lounge, modern bathrooms, and stargazing. Book on Booking or follow us on Instagram." />
   <meta name="theme-color" content="#c19a6b" />
-  <meta property="og:title" content="Aurora Desert Camp | مخيم أورورا الصحراوي ببدية" />
-  <meta property="og:description" content="اقضِ ليلة لا تُنسى بين كثبان بدية. تصفّح الصور على إنستجرام واحجز فوراً عبر Booking." />
-  <meta property="og:type" content="website" />
-  <meta property="og:locale" content="ar_AR" />
   <style>
-    :root{
-      --bg:#0f1419;--text:#f3f4f6;--muted:#cbd5e1;--primary:#b47b37;--primary-700:#915f28;--card:#141a20;--line:#1f2a33
-    }
+    :root{ --bg:#0f1419; --text:#f3f4f6; --muted:#cbd5e1; --primary:#b47b37; --primary-700:#915f28; --card:#141a20; --line:#1f2a33 }
     *{box-sizing:border-box}
-    body{margin:0;background:var(--bg);color:var(--text);font-family:"Noto Naskh Arabic","Noto Sans Arabic",system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif}
+    body{margin:0;background:var(--bg);color:var(--text);font-family:"Inter",system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif}
     a{color:inherit;text-decoration:none}
     img{max-width:100%;display:block}
     header{position:sticky;top:0;z-index:20;background:rgba(15,20,25,.7);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
@@ -47,38 +41,38 @@
     @media(min-width:900px){.grid-3{grid-template-columns:repeat(3,1fr)}}
     .card{background:var(--card);border:1px solid var(--line);border-radius:16px;overflow:hidden}
     .card .body{padding:1rem}
-    .icon{font-size:1.4rem}
-    /* Gallery */
     .gallery{display:grid;gap:1rem}
     @media(min-width:900px){.gallery{grid-template-columns:2fr 1fr}}
     .gallery .col{display:grid;gap:1rem}
     .gallery img{aspect-ratio:4/3;object-fit:cover;border-radius:14px;border:1px solid var(--line)}
-    /* Map */
-    .map{border:1px solid var(--line);border-radius:16px;overflow:hidden}
-    /* Footer */
-    footer{border-top:1px solid var(--line);padding:1.4rem 0;color:#9aa6b2}
-    /* Bilingual */
-    [data-lang="en"]{display:none}
-    :root[lang="en"] [data-lang="ar"]{display:none}
-    :root[lang="en"] [data-lang="en"]{display:block}
-    :root[lang="en"] html{direction:ltr}
+    footer{border-top:1px solid var(--line);padding:1.4rem 0;color:#9aa6b2;text-align:center}
+
+    /* Bilingual visibility */
+    [data-lang="en"]{display:block}
+    [data-lang="ar"]{display:none}
+    :root[lang="ar"] [data-lang="en"]{display:none}
+    :root[lang="ar"] [data-lang="ar"]{display:block}
+    :root[lang="ar"] body{font-family:"Noto Naskh Arabic","Noto Sans Arabic",system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif}
+    /* Floating WhatsApp Button */
+    .fab-whatsapp{position:fixed;right:16px;bottom:16px;z-index:60;background:#25D366;color:#0b1410;padding:12px 16px;border-radius:999px;border:1px solid #167c3b;box-shadow:0 8px 22px rgba(0,0,0,.35);font-weight:700}
+    .fab-whatsapp:hover{filter:brightness(.95)}
   </style>
 </head>
 <body>
   <header>
     <div class="container nav">
       <div class="brand">
-        <div class="logo" aria-hidden="true"></div>
+        <div class="logo"></div>
         <span>Aurora Desert Camp | مخيم أورورا</span>
       </div>
       <div class="nav-actions">
-        <div class="lang" aria-label="language switcher">
-          <button id="btn-ar" class="active" aria-label="العربية">AR</button>
-          <button id="btn-en" aria-label="English">EN</button>
+        <div class="lang" aria-label="Language switcher">
+          <button id="btn-en" class="active" aria-label="English">EN</button>
+          <button id="btn-ar" aria-label="العربية">AR</button>
         </div>
-        <a class="btn ghost" href="https://Wa.me/97779852" target="_blank" rel="noopener">WhatsApp</a>
-        <a class="btn ghost" href="https://instagram.com/aurora.desert" target="_blank" rel="noopener">Instagram</a>
-        <a class="btn primary" href="https://www.booking.com/Share-jxq6ke" target="_blank" rel="noopener">احجز الآن | Book</a>
+        <a class="btn ghost" href="https://wa.me/96897779852" target="_blank">WhatsApp</a>
+        <a class="btn ghost" href="https://instagram.com/aurora.desert" target="_blank">Instagram</a>
+        <a class="btn primary" href="https://www.booking.com/Share-jxq6ke" target="_blank">Book Now</a>
       </div>
     </div>
   </header>
@@ -90,57 +84,57 @@
     </div>
     <div class="overlay">
       <div class="box container">
-        <div data-lang="ar">
-          <div class="title">تجربة هادئة بين رمال بدية</div>
-          <p class="muted">استرخِ في وحدات مرتفعة بإطلالات على الكثبان، حمامات حديثة وجلسات خارجية على الشرفات.</p>
-          <div class="cta">
-            <a class="btn primary" href="https://www.booking.com/Share-jxq6ke" target="_blank">احجز عبر Booking</a>
-            <a class="btn ghost" href="https://instagram.com/aurora.desert" target="_blank">شاهد صورنا</a>
-          </div>
-        </div>
         <div data-lang="en">
           <div class="title">Slow, Serene Desert Stays in Bidiyah</div>
           <p class="muted">Elevated cabins with sweeping dune views, modern bathrooms, and cozy terraces.</p>
           <div class="cta">
-            <a class="btn primary" href="https://www.booking.com/Share-jxq6ke" target="_blank">Book on Booking</a>
-            <a class="btn ghost" href="https://instagram.com/aurora.desert" target="_blank">View on Instagram</a>
+            <a class="btn primary" href="https://www.booking.com/Share-jxq6ke" target="_blank">Book via Booking</a>
+            <a class="btn ghost" href="https://instagram.com/aurora.desert" target="_blank">View Gallery</a>
+          </div>
+        </div>
+        <div data-lang="ar">
+          <div class="title">تجربة هادئة بين رمال بدية </div>
+          <p class="muted">استرخِ في وحدات مرتفعة بإطلالات على الكثبان، حمامات حديثة وجلسات خارجية على الشرفات.</p>
+          <div class="cta">
+            <a class="btn primary" href="https://www.booking.com/Share-jxq6ke" target="_blank">احجز عبر Booking</a>
+            <a class="btn ghost" href="https://instagram.com/aurora.desert" target="_blank">شاهد الصور</a>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ABOUT / FEATURES -->
+  <!-- ABOUT -->
   <section id="about">
     <div class="container">
-      <h2 data-lang="ar">عن Aurora Desert Camp</h2>
       <h2 data-lang="en">About Aurora Desert Camp</h2>
+      <h2 data-lang="ar">عن مخيم أورورا</h2>
       <div class="grid-3">
         <div class="card">
-          <img src="jalsh.jpg" alt="Traditional majlis seating on sand" loading="lazy" />
+          <img src="jalsh.jpg" alt="Bedouin seating" loading="lazy" />
           <div class="body">
-            <b data-lang="ar">جلسات بدوية</b>
             <b data-lang="en">Bedouin Majlis</b>
-            <p class="muted" data-lang="ar">الحياة البدوية الأصيلة.</p>
+            <b data-lang="ar">جلسات بدوية</b>
             <p class="muted" data-lang="en">Authentic Bedouin life.</p>
+            <p class="muted" data-lang="ar">الحياة البدوية الأصيلة.</p>
           </div>
         </div>
         <div class="card">
           <img src="7b2863fc-63e3-4078-a476-b83800a5dce8 ٢.JPG" alt="Bedroom interior" loading="lazy" />
           <div class="body">
-            <b data-lang="ar">أسِرّة مريحة</b>
             <b data-lang="en">Comfortable Beds</b>
-            <p class="muted" data-lang="ar">مفارش نظيفة وأسرة واسعة لإقامة هادئة.</p>
+            <b data-lang="ar">أسِرّة مريحة</b>
             <p class="muted" data-lang="en">Crisp linens and spacious beds for a peaceful sleep.</p>
+            <p class="muted" data-lang="ar">مفارش نظيفة وأسرة واسعة لإقامة هادئة.</p>
           </div>
         </div>
         <div class="card">
           <img src="12.jpeg" alt="Modern shower" loading="lazy" />
           <div class="body">
-            <b data-lang="ar">حمامات حديثة</b>
             <b data-lang="en">Modern Bathrooms</b>
-            <p class="muted" data-lang="ar">دش مطري وتجهيزات عملية لانتعاش بعد المغامرة.</p>
-            <p class="muted" data-lang="en">Rain showers and practical fittings after your adventures.</p>
+            <b data-lang="ar">حمامات حديثة</b>
+            <p class="muted" data-lang="en">Refreshing rain showers and practical facilities.</p>
+            <p class="muted" data-lang="ar">دش مطري وتجهيزات عملية لراحة أفضل.</p>
           </div>
         </div>
       </div>
@@ -150,21 +144,22 @@
   <!-- GALLERY -->
   <section id="gallery">
     <div class="container">
-      <h2 data-lang="ar">صور من رمال بدية</h2>
-      <h2 data-lang="en">Bidiyah Dunes Gallery</h2>
+      <h2 data-lang="en">Gallery</h2>
+      <h2 data-lang="ar">الصور</h2>
       <div class="gallery">
         <div class="col">
-          <img src="88.jpg" alt="Golden dunes in Bidiyah at sunset" loading="lazy" />
-          <img src="IMG_4143.jpg" alt="Milky Way over desert camp" loading="lazy" />
+          <img src="88.jpg" alt="Golden dunes" loading="lazy" />
+          <img src="IMG_4143.jpg" alt="Desert camp night" loading="lazy" />
         </div>
         <div class="col">
-          <img src="764886940.jpg" alt="Camel caravan footprints on sand" loading="lazy" />
+          <img src="764886940.jpg" alt="Camel caravan" loading="lazy" />
           <img src="765160100.jpg" alt="Tea setup on dunes" loading="lazy" />
         </div>
       </div>
       <div class="cta" style="margin-top:1rem">
         <a class="btn ghost" href="https://instagram.com/aurora.desert" target="_blank">Instagram</a>
-        <a class="btn primary" href="https://www.booking.com/Share-jxq6ke" target="_blank">احجز الآن | Book</a>
+        <a class="btn primary" href="https://www.booking.com/Share-jxq6ke" target="_blank" data-lang="en">Book Now</a>
+        <a class="btn primary" href="https://www.booking.com/Share-jxq6ke" target="_blank" data-lang="ar">احجز الآن</a>
       </div>
     </div>
   </section>
@@ -172,67 +167,63 @@
   <!-- ACTIVITIES -->
   <section id="activities">
     <div class="container">
-      <h2 data-lang="ar">الفعاليات والتجارب</h2>
       <h2 data-lang="en">Activities & Experiences</h2>
+      <h2 data-lang="ar">الفعاليات والتجارب</h2>
       <div class="grid-3">
         <div class="card">
           <img src="13.jpeg" alt="Camel ride at dunes" loading="lazy" />
           <div class="body">
-            <b data-lang="ar">ركوب الجمال</b>
             <b data-lang="en">Camel Rides</b>
-            <p class="muted" data-lang="ar">جولات قصيرة مع مرشدين محليين فوق الكثبان.</p>
-            <p class="muted" data-lang="en">Guided short rides over the dunes.</p>
+            <b data-lang="ar">ركوب الجمال</b>
+            <p class="muted" data-lang="en">Guided camel rides across the dunes.</p>
+            <p class="muted" data-lang="ar">جولات بإرشاد محلي فوق الكثبان.</p>
           </div>
         </div>
         <div class="card">
           <img src="11.jpeg" alt="4x4 dune bashing" loading="lazy" />
           <div class="body">
-            <b data-lang="ar">تطعيس بسيارات 4x4</b>
             <b data-lang="en">4x4 Dune Bashing</b>
-            <p class="muted" data-lang="ar">مغامرة مثيرة على الكثبان (بالحجز المسبق).</p>
+            <b data-lang="ar">تطعيس 4x4</b>
             <p class="muted" data-lang="en">Thrilling rides on the dunes (pre-booking).</p>
-          </div>
-        </div>
-       
-        <div class="card">
-          <img src="caption.jpg" alt="Sandboarding on dune" loading="lazy" />
-          <div class="body">
-            <b data-lang="ar">تسلق الكثبان الرملية</b>
-            <b data-lang="en">sand dune climbing</b>
-            <p class="muted" data-lang="ar">نشاط ممتع يناسب الكبار والصغار.</p>
-            <p class="muted" data-lang="en">A fun favorite for all ages.</p>
+            <p class="muted" data-lang="ar">مغامرة مثيرة على الكثبان (بالحجز المسبق).</p>
           </div>
         </div>
         <div class="card">
-          <img src="15.jpeg" alt="Stargazing over dunes" loading="lazy" />
+          <img src="caption.jpg" alt="Sand dune climbing" loading="lazy" />
           <div class="body">
-            <b data-lang="ar">رصد النجوم</b>
+            <b data-lang="en">Sand Dune Climbing</b>
+            <b data-lang="ar">تسلق الكثبان</b>
+            <p class="muted" data-lang="en">Fun for all ages.</p>
+            <p class="muted" data-lang="ar">نشاط ممتع لكل الأعمار.</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="15.jpeg" alt="Stargazing" loading="lazy" />
+          <div class="body">
             <b data-lang="en">Stargazing</b>
-            <p class="muted" data-lang="ar">ليالٍ صافية لرؤية درب التبانة والتقاط الصور.</p>
-            <p class="muted" data-lang="en">Crystal-clear skies for Milky Way views.</p>
+            <b data-lang="ar">رصد النجوم</b>
+            <p class="muted" data-lang="en">Milky Way views in clear skies.</p>
+            <p class="muted" data-lang="ar">مشاهدة درب التبانة في سماء صافية.</p>
           </div>
         </div>
         <div class="card">
-          <img src="22.jpeg" alt="Bedouin dinner by campfire" loading="lazy" />
+          <img src="22.jpeg" alt="Traditional dinner" loading="lazy" />
           <div class="body">
-            <b data-lang="ar">مطعم تقليدي  </b>
-            <b data-lang="en">traditional restaurant</b>
-            <p class="muted" data-lang="ar">استمتع بضيافتنا وتذوق أشهى الأطباق المحلية.</p>
+            <b data-lang="en">Traditional Restaurant</b>
+            <b data-lang="ar">مطعم تقليدي</b>
             <p class="muted" data-lang="en">Experience our hospitality and taste the most delicious local dishes.</p>
+            <p class="muted" data-lang="ar">استمتع بضيافتنا وتذوق أشهى الأطباق المحلية.</p>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- LOCATION -->
-  
-
   <footer>
-    <div class="container" style="display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap">
-      <div>© <span id="year"></span> Aurora Desert Camp</div>
-      <div data-lang="ar">روابط سريعة: <a href="https://instagram.com/aurora.desert" target="_blank">إنستجرام</a> • <a href="https://www.booking.com/Share-jxq6ke" target="_blank">الحجز</a></div>
-      <div data-lang="en">Quick links: <a href="https://instagram.com/aurora.desert" target="_blank">Instagram</a> • <a href="https://www.booking.com/Share-jxq6ke" target="_blank">Booking</a></div>
+    <div class="container">
+      <div>© <span id="year"></span> Aurora Desert Camp — All rights reserved</div>
+      <div data-lang="en">Follow us on <a href="https://instagram.com/aurora.desert" target="_blank">Instagram</a> • <a href="https://www.booking.com/Share-jxq6ke" target="_blank">Booking</a></div>
+      <div data-lang="ar">تابعنا على <a href="https://instagram.com/aurora.desert" target="_blank">إنستجرام</a> • <a href="https://www.booking.com/Share-jxq6ke" target="_blank">بوكنق</a></div>
     </div>
   </footer>
 
@@ -242,16 +233,20 @@
 
     // language toggle
     const root = document.documentElement;
-    const btnAr = document.getElementById('btn-ar');
     const btnEn = document.getElementById('btn-en');
+    const btnAr = document.getElementById('btn-ar');
     function setLang(lang){
       root.setAttribute('lang', lang);
       document.body.dir = (lang === 'ar') ? 'rtl' : 'ltr';
-      btnAr.classList.toggle('active', lang==='ar');
       btnEn.classList.toggle('active', lang==='en');
+      btnAr.classList.toggle('active', lang==='ar');
     }
-    btnAr.addEventListener('click', ()=> setLang('ar'));
     btnEn.addEventListener('click', ()=> setLang('en'));
+    btnAr.addEventListener('click', ()=> setLang('ar'));
+
+    // OPTIONAL: set default language here
+    setLang('en'); // change to 'ar' if you want Arabic by default
   </script>
+  <a class="fab-whatsapp" href="https://wa.me/96897779852" target="_blank" aria-label="Chat on WhatsApp">WhatsApp</a>
 </body>
 </html>
